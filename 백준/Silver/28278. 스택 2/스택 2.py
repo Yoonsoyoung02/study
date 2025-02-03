@@ -4,7 +4,7 @@ N = int(sys.stdin.readline().strip())
 num_list=[]
 
 for i in range(N):
-    com = list(map(int, sys.stdin.readline().strip().split()))
+    com = list(map(int, sys.stdin.readline().split()))
 
     if com[0] == 1:
         num_list.append(com[1])
