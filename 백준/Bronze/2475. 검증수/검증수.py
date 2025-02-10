@@ -1,5 +1,2 @@
-N = map(int,input().split())
-num_list = []
-for i in N:
-    num_list.append(i**2)
-print(sum(num_list)%10)
+N = map(int, input().split())
+print(sum(i**2 for i in N) % 10)
