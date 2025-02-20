@@ -1,13 +1,5 @@
-import sys
+total = int(input())
 
-price_list = []
+sum_price=sum(int(input()) for i in range(9))
 
-for i in range (10):
-    price = int(sys.stdin.readline().rstrip())
-
-    if i == 0:
-        total = price
-    else:
-        price_list.append(price)
-        
-sys.stdout.write(f'{total-sum(price_list)}')
+print(total - sum_price)
